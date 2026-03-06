@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zophier — Classy Urban Streetwear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Montserrat', sans-serif; background: #0a0a0a; }
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white">
+
+<!-- ====== HEADER ====== -->
+
+<header id="global-header">
+  <nav class="bg-[#0f0f0f] border-b border-[#2a2a2a] fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="flex items-center">
+          <span style="font-family:'Montserrat',sans-serif; font-size:1.8rem; font-weight:900; letter-spacing:.08em; color:#fff;">ZOPHIER</span>
+        </a>
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="#shop" class="text-white hover:text-[#d4af78] transition-colors font-medium">Shop</a>
+          <a href="#about" class="text-white hover:text-[#d4af78] transition-colors font-medium">About</a>
+          <a href="#" class="text-white hover:text-[#d4af78] transition-colors font-medium">Size Guide</a>
+          <a href="#newsletter" class="text-white hover:text-[#d4af78] transition-colors font-medium">Contact</a>
+          <a href="#shop" class="bg-[#d4af78] text-[#0a0a0a] px-6 py-3 font-semibold hover:bg-[#c9a870] transition-colors">View Collection</a>
+        </div>
+        <button id="mobile-toggle" class="lg:hidden text-white p-2" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#0f0f0f] border-t border-[#2a2a2a]">
+      <div class="px-4 py-6 space-y-4">
+        <a href="#shop" class="block text-white hover:text-[#d4af78] transition-colors font-medium text-lg">Shop</a>
+        <a href="#about" class="block text-white hover:text-[#d4af78] transition-colors font-medium text-lg">About</a>
+        <a href="#" class="block text-white hover:text-[#d4af78] transition-colors font-medium text-lg">Size Guide</a>
+        <a href="#newsletter" class="block text-white hover:text-[#d4af78] transition-colors font-medium text-lg">Contact</a>
+        <a href="#shop" class="block bg-[#d4af78] text-[#0a0a0a] px-6 py-3 font-semibold text-center hover:bg-[#c9a870] transition-colors">View Collection</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ====== HERO ====== -->
+
+<section class="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden pt-20">
+  <div class="absolute inset-0">
+    <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/a3afc8a5-051e-4a38-a635-fec55850b500/publicContain" alt="Zophier Hero" class="w-full h-full object-cover"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="max-w-2xl">
+      <p class="text-[#d4af78] uppercase tracking-[0.3em] mb-4 font-medium text-sm sm:text-base">New Collection 2026</p>
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight" style="font-family:'Montserrat',sans-serif;">Zophier</h1>
+      <p class="text-2xl sm:text-3xl md:text-4xl text-white/90 mb-8 font-light" style="font-family:'Montserrat',sans-serif;">Classy Urban Streetwear</p>
+      <p class="text-gray-300 text-lg mb-10 max-w-md leading-relaxed">Premium streetwear that blends luxury minimalism with modern urban culture. Elevate your style with timeless pieces crafted for the bold.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#shop" class="inline-flex items-center justify-center bg-[#d4af78] text-[#0a0a0a] px-10 py-4 font-semibold text-lg hover:bg-[#c9a870] transition-all duration-300 transform hover:-translate-y-1">Shop Collection <i class="fa-solid fa-arrow-right ml-3"></i></a>
+        <a href="#about" class="inline-flex items-center justify-center border-2 border-white text-white px-10 py-4 font-semibold text-lg hover:bg-white hover:text-[#0a0a0a] transition-all duration-300">Our Story</a>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <i class="fa-solid fa-chevron-down text-white/60 text-xl"></i>
+  </div>
+</section>
+
+<!-- ====== FEATURED PRODUCTS ====== -->
+
+<section class="py-20 bg-[#0f0f0f]" id="shop">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <p class="text-[#d4af78] uppercase tracking-[0.2em] mb-3 text-sm font-medium">Curated For You</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4" style="font-family:'Montserrat',sans-serif;">Featured Products</h2>
+      <div class="w-24 h-1 bg-[#d4af78] mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="group cursor-pointer">
+        <div class="relative overflow-hidden bg-[#1a1a1a] aspect-[3/4] mb-4">
+          <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/508d77a2-40f0-4578-3272-1bce9d116400/public" alt="Oversized Street Hoodie" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white border border-white px-6 py-2 uppercase tracking-wider text-sm">Quick View</span>
+          </div>
+        </div>
+        <h3 class="text-white text-lg font-medium mb-1 group-hover:text-[#d4af78] transition-colors">Oversized Street Hoodie</h3>
+        <p class="text-gray-400">$89.00</p>
+      </div>
+      <div class="group cursor-pointer">
+        <div class="relative overflow-hidden bg-[#1a1a1a] aspect-[3/4] mb-4">
+          <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/7f27f383-2b81-46f9-946c-cedb3f4a9300/public" alt="Urban Classic Jacket" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white border border-white px-6 py-2 uppercase tracking-wider text-sm">Quick View</span>
+          </div>
+        </div>
+        <h3 class="text-white text-lg font-medium mb-1 group-hover:text-[#d4af78] transition-colors">Urban Classic Jacket</h3>
+        <p class="text-gray-400">$149.00</p>
+      </div>
+      <div class="group cursor-pointer">
+        <div class="relative overflow-hidden bg-[#1a1a1a] aspect-[3/4] mb-4">
+          <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/adfc3bf0-cd9a-4c3b-d539-5134b8242b00/public" alt="Denim Street Jacket" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white border border-white px-6 py-2 uppercase tracking-wider text-sm">Quick View</span>
+          </div>
+        </div>
+        <h3 class="text-white text-lg font-medium mb-1 group-hover:text-[#d4af78] transition-colors">Denim Street Jacket</h3>
+        <p class="text-gray-400">$129.00</p>
+      </div>
+      <div class="group cursor-pointer">
+        <div class="relative overflow-hidden bg-[#1a1a1a] aspect-[3/4] mb-4">
+          <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/17280418-d4b5-436f-a588-ca769e1f3000/publicContain" alt="Essential Urban Tee" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white border border-white px-6 py-2 uppercase tracking-wider text-sm">Quick View</span>
+          </div>
+        </div>
+        <h3 class="text-white text-lg font-medium mb-1 group-hover:text-[#d4af78] transition-colors">Essential Urban Tee</h3>
+        <p class="text-gray-400">$45.00</p>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="#" class="inline-flex items-center text-white hover:text-[#d4af78] transition-colors text-lg font-medium group">View All Products <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CATEGORIES ====== -->
+
+<section class="py-20 bg-[#0f0f0f]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <p class="text-[#d4af78] uppercase tracking-[0.2em] mb-3 text-sm font-medium">Shop By Category</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4" style="font-family:'Montserrat',sans-serif;">Browse Collections</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
+      <a href="#" class="group relative overflow-hidden aspect-square bg-[#1a1a1a]">
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/508d77a2-40f0-4578-3272-1bce9d116400/public" alt="Hoodies" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-300 group-hover:scale-105 transform"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="text-white text-lg md:text-xl font-semibold uppercase tracking-wider group-hover:text-[#d4af78] transition-colors">Hoodies</span>
+        </div>
+      </a>
+      <a href="#" class="group relative overflow-hidden aspect-square bg-[#1a1a1a]">
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/17280418-d4b5-436f-a588-ca769e1f3000/publicContain" alt="T-Shirts" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-300 group-hover:scale-105 transform"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="text-white text-lg md:text-xl font-semibold uppercase tracking-wider group-hover:text-[#d4af78] transition-colors">T-Shirts</span>
+        </div>
+      </a>
+      <a href="#" class="group relative overflow-hidden aspect-square bg-[#1a1a1a]">
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/adfc3bf0-cd9a-4c3b-d539-5134b8242b00/public" alt="Jackets" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-300 group-hover:scale-105 transform"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="text-white text-lg md:text-xl font-semibold uppercase tracking-wider group-hover:text-[#d4af78] transition-colors">Jackets</span>
+        </div>
+      </a>
+      <a href="#" class="group relative overflow-hidden aspect-square bg-[#1a1a1a]">
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/9638abe3-124e-4e8a-9f7c-184c62524a00/public" alt="Pants" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-300 group-hover:scale-105 transform"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="text-white text-lg md:text-xl font-semibold uppercase tracking-wider group-hover:text-[#d4af78] transition-colors">Pants</span>
+        </div>
+      </a>
+      <a href="#" class="group relative overflow-hidden aspect-square bg-[#1a1a1a]">
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4b032a5e-4abd-47ee-26ec-4c43480a5200/public" alt="Accessories" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-300 group-hover:scale-105 transform"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="text-white text-lg md:text-xl font-semibold uppercase tracking-wider group-hover:text-[#d4af78] transition-colors">Accessories</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ABOUT ====== -->
+
+<section class="py-20 bg-[#141414]" id="about">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="relative">
+        <div class="relative overflow-hidden aspect-[4/5]">
+          <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/49208d85-d050-4c78-65ca-ae571a5c8400/publicContain" alt="Urban young man" class="w-full h-full object-cover"/>
+        </div>
+        <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-[#d4af78] -z-10"></div>
+      </div>
+      <div>
+        <p class="text-[#d4af78] uppercase tracking-[0.2em] mb-3 text-sm font-medium">Our Story</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6" style="font-family:'Montserrat',sans-serif;">Redefining Urban Luxury</h2>
+        <p class="text-gray-300 text-lg mb-6 leading-relaxed">Born from the streets, elevated for the bold. Zophier bridges the gap between luxury fashion and urban street culture.</p>
+        <p class="text-gray-400 mb-8 leading-relaxed">Our design philosophy centers on clean lines, premium materials, and attention to detail.</p>
+        <div class="grid grid-cols-3 gap-8 mb-10">
+          <div><p class="text-3xl md:text-4xl font-bold text-[#d4af78]" style="font-family:'Montserrat',sans-serif;">5+</p><p class="text-gray-400 text-sm mt-1">Years of Excellence</p></div>
+          <div><p class="text-3xl md:text-4xl font-bold text-[#d4af78]" style="font-family:'Montserrat',sans-serif;">50K+</p><p class="text-gray-400 text-sm mt-1">Happy Customers</p></div>
+          <div><p class="text-3xl md:text-4xl font-bold text-[#d4af78]" style="font-family:'Montserrat',sans-serif;">100+</p><p class="text-gray-400 text-sm mt-1">Unique Designs</p></div>
+        </div>
+        <a href="#" class="inline-flex items-center text-white hover:text-[#d4af78] transition-colors text-lg font-medium group">Learn More About Us <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== NEWSLETTER ====== -->
+
+<section class="py-20 bg-[#0f0f0f] border-t border-[#2a2a2a]" id="newsletter">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-[#d4af78] uppercase tracking-[0.2em] mb-3 text-sm font-medium">Stay Updated</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4" style="font-family:'Montserrat',sans-serif;">Join the Zophier Community</h2>
+      <p class="text-gray-400 mb-8">Subscribe to receive exclusive drops, early access, and special offers.</p>
+      <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+        <input type="email" placeholder="Enter your email" class="flex-1 bg-[#1a1a1a] border border-[#2a2a2a] text-white px-6 py-4 focus:outline-none focus:border-[#d4af78] transition-colors"/>
+        <button class="bg-[#d4af78] text-[#0a0a0a] px-8 py-4 font-semibold hover:bg-[#c9a870] transition-colors whitespace-nowrap">Subscribe</button>
+      </div>
+      <p class="text-gray-500 text-sm mt-4">No spam, unsubscribe at any time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+
+<footer class="bg-[#0a0a0a] border-t border-[#2a2a2a]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="lg:col-span-1">
+        <a href="/" class="inline-block mb-5">
+          <span style="font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:900; letter-spacing:.08em; color:#fff;">ZOPHIER</span>
+        </a>
+        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Premium streetwear that blends luxury minimalism with modern urban culture.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 hover:text-[#d4af78] hover:border-[#d4af78] transition-all duration-300"><i class="fa-brands fa-instagram text-sm"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 hover:text-[#d4af78] hover:border-[#d4af78] transition-all duration-300"><i class="fa-brands fa-twitter text-sm"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full border border-[#2a2a2a] flex items-center justify-center text-gray-400 hover:text-[#d4af78] hover:border-[#d4af78] transition-all duration-300"><i class="fa-brands fa-tiktok text-sm"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-5 uppercase tracking-wider text-xs">Shop</h4>
+        <ul class="space-y-2.5">
+          <li><a href="#shop" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">All Products</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Hoodies</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">T-Shirts</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Jackets</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Pants</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-5 uppercase tracking-wider text-xs">Help</h4>
+        <ul class="space-y-2.5">
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Shipping & Returns</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Size Guide</a></li>
+          <li><a href="#newsletter" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Contact Us</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">FAQ</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Track Order</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-5 uppercase tracking-wider text-xs">Company</h4>
+        <ul class="space-y-2.5">
+          <li><a href="#about" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">About Us</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#d4af78] transition-colors text-sm">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-[#2a2a2a] mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-gray-500 text-xs">© 2026 Zophier. All rights reserved.</p>
+      <div class="flex items-center gap-3">
+        <i class="fa-brands fa-cc-visa text-gray-400 text-xl"></i>
+        <i class="fa-brands fa-cc-mastercard text-gray-400 text-xl"></i>
+        <i class="fa-brands fa-cc-amex text-gray-400 text-xl"></i>
+        <i class="fa-brands fa-cc-paypal text-gray-400 text-xl"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  document.getElementById('mobile-toggle').addEventListener('click', function() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
