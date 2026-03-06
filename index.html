@@ -399,7 +399,7 @@ function updateCartUI() {
 
 function checkout() {
   if(cart.length===0) return;
-  showToast(lang==='no' ? 'Shopify kasse kommer snart!' : 'Shopify checkout coming soon!');
+  window.location.href = 'https://zophierstudios.myshopify.com';
 }
 
 function showToast(msg) {
